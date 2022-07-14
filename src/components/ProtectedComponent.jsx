@@ -1,10 +1,14 @@
 import { intersection } from 'lodash'
 import useAuth from './hooks/useAuth'
 
-const ProtectedComponent = ({ children, requiredRoles = [] }) => {
+const ProtectedComponent = ({ children, allowedRoles = [], excludedRoles = [] }) => {
   const { user } = useAuth()
 
-  const isAuthorized = intersection(requiredRoles, user.roles).length
+  let isAuthorized = allowedRoles.length
+    ? intersection(allowedRoles, user.roles).length
+    : excludedRoles.length
+    ? !intersection(excludedRoles, user.roles).length
+    : true
 
   return isAuthorized ? children : null
 }

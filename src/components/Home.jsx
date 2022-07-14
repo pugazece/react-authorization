@@ -1,12 +1,9 @@
 import { ROLES } from 'helpers/constants'
-import { intersection } from 'lodash'
 import useAuth from './hooks/useAuth'
+import ProtectedComponent from './ProtectedComponent'
 
 const Home = () => {
-  const { user, setUser } = useAuth()
-
-  const isUser = intersection([ROLES.USER], user.roles).length > 0
-  const isAdmin = intersection([ROLES.ADMIN], user.roles).length > 0
+  const { setUser } = useAuth()
 
   const loginAsUser = (e) => {
     e.preventDefault()
@@ -24,8 +21,14 @@ const Home = () => {
       <div>Accesible to everyone</div>
 
       <div className="button-container">
-        {!isUser && <button onClick={loginAsUser}>Login as User</button>}
-        {!isAdmin && <button onClick={loginAsAdmin}>Login as Admin</button>}
+        <ProtectedComponent excludedRoles={[ROLES.USER]}>
+          <button onClick={loginAsUser}>Login as User</button>
+        </ProtectedComponent>
+        <ProtectedComponent excludedRoles={[ROLES.ADMIN]}>
+          <button className="secondary" onClick={loginAsAdmin}>
+            Login as Admin
+          </button>
+        </ProtectedComponent>
       </div>
     </div>
   )
