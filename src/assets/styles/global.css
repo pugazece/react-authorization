@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body,
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1em;
+}
+
+header {
+  background-color: beige;
+  flex-shrink: 0;
+  padding: 1.5em 1em;
+}
+
+footer {
+  padding: 1em;
+  font-size: 0.875em;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .menu,
+nav .user {
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  color: brown;
+}
+
+.error {
+  color: red;
+}
+
+.button-container {
+  padding: 1.5em 0;
+  display: flex;
+  gap: 1.5em;
+}
+
+button {
+  cursor: pointer;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: aquamarine;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button:last-child {
+  background-color: dodgerblue;
+}
+
+button:last-child:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
