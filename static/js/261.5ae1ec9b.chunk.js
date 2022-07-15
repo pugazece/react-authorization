@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_authorization=self.webpackChunkreact_authorization||[]).push([[261],{261:function(n,e,a){a.r(e);var i=a(184);e.default=function(){return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)("h3",{children:"Admin Dashboard:"}),(0,i.jsx)("div",{children:"Only accessible to Admins"})]})}}}]);
+//# sourceMappingURL=261.5ae1ec9b.chunk.js.map

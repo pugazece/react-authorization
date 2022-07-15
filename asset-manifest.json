@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-authorization/static/css/main.b038d5e3.css",
+    "main.js": "/react-authorization/static/js/main.f87d0578.js",
+    "static/js/649.4cac68af.chunk.js": "/react-authorization/static/js/649.4cac68af.chunk.js",
+    "static/js/455.dd11c4f4.chunk.js": "/react-authorization/static/js/455.dd11c4f4.chunk.js",
+    "static/js/261.5ae1ec9b.chunk.js": "/react-authorization/static/js/261.5ae1ec9b.chunk.js",
+    "index.html": "/react-authorization/index.html",
+    "main.b038d5e3.css.map": "/react-authorization/static/css/main.b038d5e3.css.map",
+    "main.f87d0578.js.map": "/react-authorization/static/js/main.f87d0578.js.map",
+    "649.4cac68af.chunk.js.map": "/react-authorization/static/js/649.4cac68af.chunk.js.map",
+    "455.dd11c4f4.chunk.js.map": "/react-authorization/static/js/455.dd11c4f4.chunk.js.map",
+    "261.5ae1ec9b.chunk.js.map": "/react-authorization/static/js/261.5ae1ec9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b038d5e3.css",
+    "static/js/main.f87d0578.js"
+  ]
+}
